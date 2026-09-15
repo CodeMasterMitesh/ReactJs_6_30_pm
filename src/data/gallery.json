@@ -2,16 +2,23 @@
     {
         "id" : 1,
         "title" : "Image 1",
-        "imgPath" : "/images/im1.jpg"
+        "imgPath" : "/images/im1.jpg",
+        "price" : 100,
+        "productLink" : "https://www.amazon.in/gp/aw/d/B0GKY2XHMQ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=ade4f9c86506f1513de190f61b80e0b9&hsa_cr_id=0&qid=1789480145&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&i=electronics&aref=EFyFdx307F&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=A5RS9&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=HWKZQZSW4MQCFRBNJQME&pd_rd_wg=eZxHz&pd_rd_r=182ce20b-64d2-422d-9c9a-ab150439f148&th=1"
+
     },
     {   
         "id" : 2,
         "title" : "Image 2",
-        "imgPath" : "/images/im2.jpg"
+        "imgPath" : "/images/im2.jpg",
+        "price" : 200,
+        "productLink" : "https://www.amazon.in/dp/B0H37X8YBW/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B0H37X8YBW&pd_rd_w=XUutv&content-id=amzn1.sym.cebd979a-4e06-4bc9-ba7d-b9887a34ed18&pf_rd_p=cebd979a-4e06-4bc9-ba7d-b9887a34ed18&pf_rd_r=7JP07FVEDRJN41YAWRK5&pd_rd_wg=Pq8GG&pd_rd_r=b68d789a-e519-45d9-b31a-d8d17bd41e73&aref=Y9mX8rbHXT&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
     },
     {
         "id" : 3,
         "title" : "Image 3",
-        "imgPath" : "/images/im3.jpg"
+        "imgPath" : "/images/im3.jpg",
+        "price" : 300,
+        "productLink" : "https://www.amazon.in/stores/page/BEAD4F82-4F10-49B7-9005-08D70EFFDE22/?_encoding=UTF8&store_ref=SB_A08232151CM0KKW9Y7PRR-A08412752XZJGZR6P303M&pd_rd_plhdr=t&aaxitk=11ca0cb0bb3f83916b06c143a6618584&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B0H37X8YBW&aref=Jn5UF2hCGS&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mbd_mb0_asin&pd_rd_w=iY1rU&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=DGKXC5JFSF9XXEMN2FAX&pd_rd_wg=lRdgS&pd_rd_r=e8b57e9e-23df-46b4-9e76-5efd9a1a42ec"
     }
 ]
