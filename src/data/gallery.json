@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "title" : "Image 1",
+        "imgPath" : "/images/im1.jpg"
+    },
+    {   
+        "id" : 2,
+        "title" : "Image 2",
+        "imgPath" : "/images/im2.jpg"
+    },
+    {
+        "id" : 3,
+        "title" : "Image 3",
+        "imgPath" : "/images/im3.jpg"
+    }
+]
