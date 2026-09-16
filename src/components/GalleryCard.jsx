@@ -2,22 +2,34 @@ import galleryData from '../data/gallery.json'
 import { Button } from "./Button";
 // {console.log(galleryData)}
 
-export const GalleryCard = () =>{
+export const GalleryCard = () => {
+
+  const productBtnStyle = { 
+    display: "inline-block", 
+    width: "150px", 
+    padding: "10px", 
+    border: "none", 
+    textAlign: "center", 
+    borderRadius: "8px", 
+    backgroundColor: "royalblue", 
+    color: "white" 
+  };
+
   return (
-    <div className="gallery">
-        {
-          galleryData.map((e)=>{
-            return (
-              <div key={e.id} className="card">
-                <img src={e.imgPath} alt={e.imgPath}/>
-                <h3><span>Title : </span> {e.title}</h3>
-                <h3><span>Price : </span> {e.price}</h3>
-                <Button name="Buy" target="_blank" link={e.productLink}/>
-              </div>
-            )
-          })
-        }
-          {/* 
+    <div className="gallery" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 20px" }}>
+      {
+        galleryData.map((e) => {
+          return (
+            <div key={e.id} className="card">
+              <img src={e.imgPath} alt={e.imgPath} />
+              <h3 style={{ fontSize: "30px" }}><span>Title : </span> {e.title}</h3>
+              <h3><span>Price : </span> {e.price}</h3>
+              <Button style={productBtnStyle} name="Buy" target="_blank" link={e.productLink} />
+            </div>
+          )
+        })
+      }
+      {/* 
           <div className="card">
             <img src={galleryData[0].imgPath} alt="im1.jpg"/>
             <h3><span>Title : </span> {galleryData[0].title}</h3>
