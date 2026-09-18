@@ -5,9 +5,9 @@
 // }
 
 
-export const Button = ({link,target,name,style}) =>{
+export const Button = ({link,target,name,style,bgcolor}) =>{
     console.log(style)
     return(
-        <a style={style} href={link} target={target}>{name}</a>
+        <a style={style} className={bgcolor} href={link} target={target}>{name}</a>
     )
 }
