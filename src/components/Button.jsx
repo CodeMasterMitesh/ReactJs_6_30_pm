@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 // export const Button = (props) =>{
 //     return(
 //         <a href={props.link} target={props.target}>{props.name}</a>

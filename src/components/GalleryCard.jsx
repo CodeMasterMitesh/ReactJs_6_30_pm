@@ -1,5 +1,7 @@
 import galleryData from '../data/gallery.json'
 import { Button } from "./Button";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // {console.log(galleryData)}
 
 export const GalleryCard = () => {
@@ -21,10 +23,12 @@ export const GalleryCard = () => {
         galleryData.map((e) => {
           return (
             <div key={e.id} className="card">
-              <img src={e.imgPath} alt={e.imgPath} />
-              <h3 style={{ fontSize: "30px" }}><span>Title : </span> {e.title}</h3>
-              <h3><span>Price : </span> {e.price}</h3>
-              <Button style={productBtnStyle} name="Buy" target="_blank" link={e.productLink} />
+              <img src={e.imgPath} className='card-img-top' alt={e.imgPath} />
+              <div className='card-body'>
+                  <h3 className='card-title'><span className='card-title'>Title : </span> {e.title}</h3>
+                  <h3><span>Price : </span> {e.price}</h3>
+                  <Button bgcolor={"btn btn-success"} name="Buy" target="_blank" link={e.productLink} />
+              </div>
             </div>
           )
         })
