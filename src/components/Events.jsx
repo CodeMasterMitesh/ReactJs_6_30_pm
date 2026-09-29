@@ -32,10 +32,11 @@ export const Events = ()=>{
     // }
 
     function myFunction(e,p){
-        e.stopPropagation();
-        console.log("This is Click Event.");
-        console.log(e);
-        console.log(p);
+        // e.stopPropagation();
+        // console.log("This is Click Event.");
+        // console.log(e);
+        // console.log(p);
+        alert("This is Click Event.")
     }
 
     const parentClickEvent = (e)=>{
@@ -44,13 +45,14 @@ export const Events = ()=>{
     }
 
     const grandParentClickEvent = (e)=>{
+        // e.stopPropagation();
         alert("grandParent Event Fire");
     }
     return(
         <>
-            <div onClick={grandParentClickEvent} style={grandParent}>
+            <div onClickCapture={grandParentClickEvent} style={grandParent}>
                 <div onClickCapture={parentClickEvent} style={parent}>
-                    <button style={btnCss} onClick={(e)=> myFunction(e,"Mitesh")}>Click</button>
+                    <button style={btnCss} onClickCapture={(e)=> myFunction(e,"Mitesh")}>Click</button>
                 </div>
             </div>
            {/* <button style={btnCss} onClick={(e)=> console.log("Click Event Fire.",e)}>Click</button> */}
