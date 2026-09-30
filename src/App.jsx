@@ -5,6 +5,7 @@ import { HeroArea } from './components/HeroArea.jsx';
 import {Nav} from './components/Nav.jsx'
 import { Events } from "./components/Events.jsx";
 import { EventProps } from "./components/EventProps.jsx";
+import { StateManagement } from "./hooks/stateManagement.jsx";
 const App = () => {
 
   return (
@@ -13,7 +14,8 @@ const App = () => {
       <HeroArea/>
       <GalleryCard/> */}
       {/* <Events/> */}
-      <EventProps/>
+      {/* <EventProps/> */}
+      <StateManagement/>
     </>
   );
 };
