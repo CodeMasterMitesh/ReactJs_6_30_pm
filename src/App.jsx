@@ -6,6 +6,7 @@ import {Nav} from './components/Nav.jsx'
 import { Events } from "./components/Events.jsx";
 import { EventProps } from "./components/EventProps.jsx";
 import { StateManagement } from "./hooks/stateManagement.jsx";
+import { StudentData } from "./hooks/StudentData.jsx";
 const App = () => {
 
   return (
@@ -15,7 +16,8 @@ const App = () => {
       <GalleryCard/> */}
       {/* <Events/> */}
       {/* <EventProps/> */}
-      <StateManagement/>
+      {/* <StateManagement/> */}
+      <StudentData />
     </>
   );
 };
