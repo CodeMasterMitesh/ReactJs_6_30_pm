@@ -8,6 +8,7 @@ import { EventProps } from "./components/EventProps.jsx";
 import { StateManagement } from "./hooks/stateManagement.jsx";
 import { StudentData } from "./hooks/StudentData.jsx";
 import { LiftingUpState } from "./components/LiftingUpState.jsx";
+import { ProductCounterApp } from "./components/ProductCounterApp.jsx";
 const App = () => {
 
   return (
@@ -19,7 +20,8 @@ const App = () => {
       {/* <EventProps/> */}
       {/* <StateManagement/> */}
       {/* <StudentData /> */}
-      <LiftingUpState/>
+      {/* <LiftingUpState/> */}
+      <ProductCounterApp/>
     </>
   );
 };
