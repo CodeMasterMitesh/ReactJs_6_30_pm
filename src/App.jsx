@@ -9,6 +9,7 @@ import { StateManagement } from "./hooks/stateManagement.jsx";
 import { StudentData } from "./hooks/StudentData.jsx";
 import { LiftingUpState } from "./components/LiftingUpState.jsx";
 import { ProductCounterApp } from "./components/ProductCounterApp.jsx";
+import { Todo } from "./components/Todo.jsx";
 const App = () => {
 
   return (
@@ -21,7 +22,8 @@ const App = () => {
       {/* <StateManagement/> */}
       {/* <StudentData /> */}
       {/* <LiftingUpState/> */}
-      <ProductCounterApp/>
+      {/* <ProductCounterApp/> */}
+      <Todo/>
     </>
   );
 };
