@@ -10,6 +10,7 @@ import { StudentData } from "./hooks/StudentData.jsx";
 import { LiftingUpState } from "./components/LiftingUpState.jsx";
 import { ProductCounterApp } from "./components/ProductCounterApp.jsx";
 import { Todo } from "./components/Todo.jsx";
+import { RegistrationForm } from "./components/RegistrationForm.jsx";
 const App = () => {
 
   return (
@@ -23,7 +24,8 @@ const App = () => {
       {/* <StudentData /> */}
       {/* <LiftingUpState/> */}
       {/* <ProductCounterApp/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <RegistrationForm/>
     </>
   );
 };
