@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 export const RegistrationForm = ()=>{
+    // console.log("r");
     const [formData,setFormData] = useState({
         firstName:"",
         lastName:"",
@@ -8,8 +9,7 @@ export const RegistrationForm = ()=>{
         mobileNumber:"",
         city:"",
     });
-
-    const [data, setData] = useState("");
+    const [data, setData] = useState(null);
 
     const handleFormInput = (e)=>{
         // console.log(e.target);
@@ -20,10 +20,8 @@ export const RegistrationForm = ()=>{
 
     const handleFormSubmit = (e)=>{
         e.preventDefault();
-        const formData = new FormData(e.target)
-        const  a = Object.fromEntries(formData.entries());
-        setData(a);
-        console.log(data);
+        setData(formData);
+        console.log(formData);
     }
     return (
         <div className="container">
@@ -44,7 +42,7 @@ export const RegistrationForm = ()=>{
                 <input type="text" name="mobileNumber" onChange={(e)=> handleFormInput(e)} value={formData.mobileNumber} />
                 <br />
                 <label htmlFor="">CityName</label>
-                <select name="city" id="" onChange={(e)=> handleFormInput(e)}>
+                <select name="city" id="" value={formData.city} onChange={(e)=> handleFormInput(e)}>
                     <option value="">Select City Name</option>
                     <option value="Ahmedabad">Ahmedabad</option>
                     <option value="Baroda">Baroda</option>
@@ -53,6 +51,16 @@ export const RegistrationForm = ()=>{
                 <br />
                 <input type="submit" value={"Submit"}/>
             </form>
+            {data && (
+                <div>
+                    <h2>Submitted Data</h2>
+                    <p>First Name: {data.firstName}</p>
+                    <p>Last Name: {data.lastName}</p>
+                    <p>Email: {data.email}</p>
+                    <p>Mobile: {data.mobileNumber}</p>
+                    <p>City: {data.city}</p>
+                </div>
+            )}
         </div>
     )
 

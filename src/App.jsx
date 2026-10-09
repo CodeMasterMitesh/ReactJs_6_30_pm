@@ -11,6 +11,7 @@ import { LiftingUpState } from "./components/LiftingUpState.jsx";
 import { ProductCounterApp } from "./components/ProductCounterApp.jsx";
 import { Todo } from "./components/Todo.jsx";
 import { RegistrationForm } from "./components/RegistrationForm.jsx";
+import { UseEffectCom } from "./components/UseEffectCom.jsx";
 const App = () => {
 
   return (
@@ -25,7 +26,8 @@ const App = () => {
       {/* <LiftingUpState/> */}
       {/* <ProductCounterApp/> */}
       {/* <Todo/> */}
-      <RegistrationForm/>
+      {/* <RegistrationForm/> */}
+      <UseEffectCom/>
     </>
   );
 };
