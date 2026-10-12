@@ -12,6 +12,7 @@ import { ProductCounterApp } from "./components/ProductCounterApp.jsx";
 import { Todo } from "./components/Todo.jsx";
 import { RegistrationForm } from "./components/RegistrationForm.jsx";
 import { UseEffectCom } from "./components/UseEffectCom.jsx";
+import { JokesApi } from "./components/jokesApi.jsx";
 const App = () => {
 
   return (
@@ -27,7 +28,8 @@ const App = () => {
       {/* <ProductCounterApp/> */}
       {/* <Todo/> */}
       {/* <RegistrationForm/> */}
-      <UseEffectCom/>
+      {/* <UseEffectCom/> */}
+      <JokesApi/>
     </>
   );
 };
