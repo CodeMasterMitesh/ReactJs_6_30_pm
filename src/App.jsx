@@ -13,6 +13,7 @@ import { Todo } from "./components/Todo.jsx";
 import { RegistrationForm } from "./components/RegistrationForm.jsx";
 import { UseEffectCom } from "./components/UseEffectCom.jsx";
 import { JokesApi } from "./components/jokesApi.jsx";
+import { UseRefHook } from "./hooks/UseRefHook.jsx";
 const App = () => {
 
   return (
@@ -29,7 +30,8 @@ const App = () => {
       {/* <Todo/> */}
       {/* <RegistrationForm/> */}
       {/* <UseEffectCom/> */}
-      <JokesApi/>
+      {/* <JokesApi/> */}
+      <UseRefHook/>
     </>
   );
 };
