@@ -14,6 +14,7 @@ import { RegistrationForm } from "./components/RegistrationForm.jsx";
 import { UseEffectCom } from "./components/UseEffectCom.jsx";
 import { JokesApi } from "./components/jokesApi.jsx";
 import { UseRefHook } from "./hooks/UseRefHook.jsx";
+import { ParentCom } from "./hooks/PropsDrilling.jsx";
 const App = () => {
 
   return (
@@ -31,7 +32,8 @@ const App = () => {
       {/* <RegistrationForm/> */}
       {/* <UseEffectCom/> */}
       {/* <JokesApi/> */}
-      <UseRefHook/>
+      {/* <UseRefHook/> */}
+      <ParentCom/>
     </>
   );
 };
