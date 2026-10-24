@@ -15,6 +15,7 @@ import { UseEffectCom } from "./components/UseEffectCom.jsx";
 import { JokesApi } from "./components/jokesApi.jsx";
 import { UseRefHook } from "./hooks/UseRefHook.jsx";
 import { ParentCom } from "./hooks/PropsDrilling.jsx";
+import { UseReducerHook } from "./hooks/UseReducerHook.jsx";
 const App = () => {
 
   return (
@@ -33,7 +34,8 @@ const App = () => {
       {/* <UseEffectCom/> */}
       {/* <JokesApi/> */}
       {/* <UseRefHook/> */}
-      <ParentCom/>
+      {/* <ParentCom/> */}
+      <UseReducerHook/>
     </>
   );
 };

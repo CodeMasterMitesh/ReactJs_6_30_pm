@@ -1,6 +1,15 @@
-import { useRef } from "react";
+import { useId, useRef } from "react";
+
+// useId is a React Hook used to generate unique IDs that can be passed to accessibility attributes (like aria-describedby or htmlFor). It ensures that the generated IDs are stable across the server and the client, preventing hydration mismatches in Server-Side Rendering (SSR) applications.
 
 export const UseRefHook = () =>{
+    // const finame = useId();
+    // const liname = useId();
+    // console.log(finame);
+    // console.log(liname);
+
+    const iid = useId();
+
     // const fname = document.getElementById("firstName").value;
     // const lname = document.getElementById("lastName").value;
     // const mobile = document.getElementById("mobile").value;
@@ -20,17 +29,17 @@ export const UseRefHook = () =>{
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="">FirstName</label>
-                <input type="text" name="firstName" ref={fname} id="firstName" placeholder="Enter Your FirstName" />
+                <label htmlFor={iid + "firstName"}>FirstName</label>
+                <input type="text" name="firstName" ref={fname} id={iid + "firstName"} placeholder="Enter Your FirstName" />
                 <br />
-                <label htmlFor="">LastName</label>
-                <input type="text" name="lastName" ref={lname} id="lastName" placeholder="Enter Your LastName" />
+                <label htmlFor={iid + "lastName"}>LastName</label>
+                <input type="text" name="lastName" ref={lname} id={iid + "lastName"} placeholder="Enter Your LastName" />
                 <br />
-                <label htmlFor="">Mobile Number</label>
-                <input type="text" id="mobile" ref={mobile} name="mobile" />
+                <label htmlFor={iid + "mobile"}>Mobile Number</label>
+                <input type="text" id={iid + "mobile"} ref={mobile} name="mobile" />
                 <br />
-                <label htmlFor="">Email</label>
-                <input type="email" id="email" ref={email} name="email" />
+                <label htmlFor={iid + "email"}>Email</label>
+                <input type="email" id={iid + "email"} ref={email} name="email" />
                 <br />
                 <input type="submit" value="Submit" />
             </form>
