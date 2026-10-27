@@ -16,6 +16,8 @@ import { JokesApi } from "./components/jokesApi.jsx";
 import { UseRefHook } from "./hooks/UseRefHook.jsx";
 import { ParentCom } from "./hooks/PropsDrilling.jsx";
 import { UseReducerHook } from "./hooks/UseReducerHook.jsx";
+import { MemoHook } from "./hooks/MemoHook.jsx";
+import { UseMemoHook } from "./hooks/UseMemoHook.jsx";
 const App = () => {
 
   return (
@@ -35,7 +37,9 @@ const App = () => {
       {/* <JokesApi/> */}
       {/* <UseRefHook/> */}
       {/* <ParentCom/> */}
-      <UseReducerHook/>
+      {/* <UseReducerHook/> */}
+      {/* <MemoHook/> */}
+      <UseMemoHook/>
     </>
   );
 };
