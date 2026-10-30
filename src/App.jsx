@@ -18,6 +18,7 @@ import { ParentCom } from "./hooks/PropsDrilling.jsx";
 import { UseReducerHook } from "./hooks/UseReducerHook.jsx";
 import { MemoHook } from "./hooks/MemoHook.jsx";
 import { UseMemoHook } from "./hooks/UseMemoHook.jsx";
+import { UseCallBackHook } from "./hooks/UseCallBackHook.jsx";
 const App = () => {
 
   return (
@@ -39,7 +40,8 @@ const App = () => {
       {/* <ParentCom/> */}
       {/* <UseReducerHook/> */}
       {/* <MemoHook/> */}
-      <UseMemoHook/>
+      {/* <UseMemoHook/> */}
+      <UseCallBackHook/>
     </>
   );
 };
