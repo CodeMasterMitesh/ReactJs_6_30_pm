@@ -1,48 +1,28 @@
 import { Fragment } from "react";
 import "./App.css"
-import { GalleryCard } from "./components/GalleryCard";
-import { HeroArea } from './components/HeroArea.jsx';
-import {Nav} from './components/Nav.jsx'
-import { Events } from "./components/Events.jsx";
-import { EventProps } from "./components/EventProps.jsx";
-import { StateManagement } from "./hooks/stateManagement.jsx";
-import { StudentData } from "./hooks/StudentData.jsx";
-import { LiftingUpState } from "./components/LiftingUpState.jsx";
-import { ProductCounterApp } from "./components/ProductCounterApp.jsx";
-import { Todo } from "./components/Todo.jsx";
-import { RegistrationForm } from "./components/RegistrationForm.jsx";
-import { UseEffectCom } from "./components/UseEffectCom.jsx";
-import { JokesApi } from "./components/jokesApi.jsx";
-import { UseRefHook } from "./hooks/UseRefHook.jsx";
-import { ParentCom } from "./hooks/PropsDrilling.jsx";
-import { UseReducerHook } from "./hooks/UseReducerHook.jsx";
-import { MemoHook } from "./hooks/MemoHook.jsx";
-import { UseMemoHook } from "./hooks/UseMemoHook.jsx";
-import { UseCallBackHook } from "./hooks/UseCallBackHook.jsx";
+import { Home } from "./pages/Home.jsx";
+import { About } from "./pages/About.jsx";
+import { Contact } from "./pages/Contact.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const App = () => {
 
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/about',
+      element: <About />,
+    },
+    {
+      path: '/contact',
+      element: <Contact />,
+    },
+  ]);
+
   return (
-    <>
-      {/* <Nav/>
-      <HeroArea/>
-      <GalleryCard/> */}
-      {/* <Events/> */}
-      {/* <EventProps/> */}
-      {/* <StateManagement/> */}
-      {/* <StudentData /> */}
-      {/* <LiftingUpState/> */}
-      {/* <ProductCounterApp/> */}
-      {/* <Todo/> */}
-      {/* <RegistrationForm/> */}
-      {/* <UseEffectCom/> */}
-      {/* <JokesApi/> */}
-      {/* <UseRefHook/> */}
-      {/* <ParentCom/> */}
-      {/* <UseReducerHook/> */}
-      {/* <MemoHook/> */}
-      {/* <UseMemoHook/> */}
-      <UseCallBackHook/>
-    </>
+    <RouterProvider router={router} />
   );
 };
 
