@@ -4,32 +4,42 @@ import { Home } from "./pages/Home.jsx";
 import { About } from "./pages/About.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
+import { AppLayout } from "./components/AppLayout.jsx";
+import {ErrorPage} from "./components/ErrorPage.jsx";
 const App = () => {
 
-  // const router = createBrowserRouter([
-  //   {
-  //     path: '/',
-  //     element: <Home />,
-  //   },
-  //   {
-  //     path: '/about',
-  //     element: <About />,
-  //   },
-  //   {
-  //     path: '/contact',
-  //     element: <Contact />,
-  //   },
-  // ]);
+  const router = createBrowserRouter([
+    {
+      path : "/",
+      element : <AppLayout/>,
+      // errorElement : <ErrorPage/>,
+      ErrorBoundary : ErrorPage,
+      children : [
+          {
+            path: '/',
+            element: <Home />,
+          },
+          {
+            path: '/about',
+            element: <About />,
+          },
+          {
+            path: '/contact',
+            element: <Contact />,
+          },
+      ]
+    },
+  ]);
 
   return (
-    // <RouterProvider router={router} />
-    <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
+    // <BrowserRouter>
+    //   <Routes>
+    //       <Route path="/" element={<Home/>}/>
+    //       <Route path="/about" element={<About/>}/>
+    //       <Route path="/contact" element={<Contact/>}/>
+    //   </Routes>
+    // </BrowserRouter>
   );
 };
 
