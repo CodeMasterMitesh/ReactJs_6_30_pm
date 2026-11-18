@@ -6,6 +6,8 @@ import { Contact } from "./pages/Contact.jsx";
 import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
 import { AppLayout } from "./components/AppLayout.jsx";
 import {ErrorPage} from "./components/ErrorPage.jsx";
+import { News } from "./pages/News.jsx";
+import { GetApiData } from "./Api/GetApiData.jsx";
 const App = () => {
 
   const router = createBrowserRouter([
@@ -22,6 +24,11 @@ const App = () => {
           {
             path: '/about',
             element: <About />,
+          },
+          {
+            path: '/news',
+            element: <News />,
+            loader : GetApiData
           },
           {
             path: '/contact',
