@@ -8,6 +8,7 @@ import { AppLayout } from "./components/AppLayout.jsx";
 import {ErrorPage} from "./components/ErrorPage.jsx";
 import { News } from "./pages/News.jsx";
 import { GetApiData } from "./Api/GetApiData.jsx";
+import { AxiosExm } from "./pages/AxiosExm.jsx";
 const App = () => {
 
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const App = () => {
             path: '/contact',
             element: <Contact />,
           },
+          {
+            path : '/axiosexm',
+            element : <AxiosExm/>
+          }
       ]
     },
   ]);
