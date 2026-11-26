@@ -31,7 +31,7 @@ const reducer = (state = initialState,action)=>{
 
 }
 
-const store = createStore(reducer);
+export const store = createStore(reducer);
 
 const addTask = (data)=>{
     return {type:ADD_TASK,payload:data}
@@ -51,6 +51,6 @@ store.dispatch(addTask("Today I have 5:40 PM Python Lecture"));
 
 console.log(store.getState());
 
-store.dispatch(deleteTask(1));
+// store.dispatch(deleteTask(1));
 
-console.log(store.getState());
+// console.log(store.getState());

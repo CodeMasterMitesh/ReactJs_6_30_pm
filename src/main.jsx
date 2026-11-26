@@ -4,12 +4,16 @@ import App from './App.jsx'
 import './index.css';
 import { ContextProvider } from './hooks/UseContextHook.jsx';
 import "./Redux/Store.jsx"
-
+import { Provider } from 'react-redux';
+import { store } from './Redux/Store.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContextProvider>
-      <App />
-    </ContextProvider>
+    {/* <ContextProvider> */}
+      <Provider store={store}>
+          <App />
+      </Provider>
+
+    {/* </ContextProvider> */}
   </StrictMode>,
 )

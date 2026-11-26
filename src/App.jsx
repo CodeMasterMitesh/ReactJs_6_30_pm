@@ -9,6 +9,7 @@ import {ErrorPage} from "./components/ErrorPage.jsx";
 import { News } from "./pages/News.jsx";
 import { GetApiData } from "./Api/GetApiData.jsx";
 import { AxiosExm } from "./pages/AxiosExm.jsx";
+import { Task } from "./Redux/Task.jsx";
 const App = () => {
 
   const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const App = () => {
           {
             path : '/axiosexm',
             element : <AxiosExm/>
+          },
+          {
+            path : '/task',
+            element : <Task/>
           }
       ]
     },
